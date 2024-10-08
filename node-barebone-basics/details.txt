@@ -1,0 +1,12 @@
+email,hassan@gmail.com
+fullname,Mohamed Hassan
+ 
+email,anwar@gmail.com
+fullname,anwar maideen
+ 
+email,sandeep@gmail.com
+fullname,Sandeep Malu
+ 
+email,mohan@gmail.com
+fullname,mohan kumar
+ 
