@@ -1,0 +1,16 @@
+{
+  "name": "express-barebone-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Mohamed Hassan (hassanaesthete008@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}

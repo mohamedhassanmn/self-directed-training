@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Form</title>
+    <link href="/global.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="/products">All Products</a></li>
+        <li><a href="/admin/product-form">Add Product</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1>Product Form</h1>
+      <p id="submit-status"></p>
+      <form action="/admin/new-product" method="post">
+        <label for="product-name">Product Name</label>
+        <input id="product-name" name="productName" />
+        <label for="product-quantity">Product Quantity</label>
+        <input id="product-quantity" name="productQuantity" type="number" />
+        <button type="submit">Save</button>
+      </form>
+    </main>
+    <script>
+      const statusEle = document.getElementById("submit-status");
+      const currentUrl = window.location.href;
+      const url = new URL(currentUrl);
+      const queryParam = url.searchParams;
+      const submitStatus = queryParam.get("submitStatus");
+      if (submitStatus)
+        statusEle.textContent = `Form Submit Status: ${submitStatus}`;
+    </script>
+  </body>
+</html>
