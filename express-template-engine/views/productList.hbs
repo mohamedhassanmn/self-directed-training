@@ -1,0 +1,11 @@
+<main>
+    {{#if isNonEmptyList}}
+    <ul>
+        {{#each products}}
+         <li>{{this.productName}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+     <h3>No Product Yet!</h3>
+    {{/if}}
+</main>

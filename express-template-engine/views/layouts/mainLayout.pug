@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/global.css")
+    body 
+        nav 
+            ul 
+                li 
+                    a(href="/") Products
+                li 
+                    a(href="/admin") Add Products
+        block content

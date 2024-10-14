@@ -1,0 +1,8 @@
+extends layouts/mainLayout.pug
+block content
+    if status=="success" 
+        p.success Product Successfully Added To The List !
+    form(action="/admin/add-products",method="post") 
+        label(for="productName") Product Name : 
+        input(type="text",id="productName",name="productName")
+        button(type="submit") Submit

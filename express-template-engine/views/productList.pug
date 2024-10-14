@@ -1,0 +1,8 @@
+extends layouts/mainLayout.pug
+block content
+        if isNonEmptyList
+            ul
+                each product in products 
+                    li #{product.productName} 
+        else 
+            h3 No Product Yet!

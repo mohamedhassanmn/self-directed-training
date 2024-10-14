@@ -1,0 +1,13 @@
+<%- include('includes/head.ejs') %>
+    
+<% if (status=="success") { %> 
+    <p class="success"> Product Successfully Added To The List !</p>
+<% } %>
+
+<form action ="/admin/add-products" method="post">
+    <label for="productName">Product Name: </label>
+    <input type="text" id="productName" name="productName"/>
+    <button type="submit">Submit</button>
+</form>
+
+<%- include('includes/end.ejs') %>

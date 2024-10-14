@@ -1,0 +1,11 @@
+<main>
+    {{#if status}}
+        <p class="success"> Product Successfully Added To The List !</p>
+    {{/if}}
+
+    <form action ="/admin/add-products" method="post">
+        <label for="productName">Product Name: </label>
+        <input type="text" id="productName" name="productName"/>
+        <button type="submit">Submit</button>
+    </form>
+</main>
